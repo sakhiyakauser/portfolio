@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap');
+$font-body:"Roboto" , sans-serif;
+$font-dispaly: "Dancing Script", cursive;
+$color-primary: rgb(241, 121, 9);
+$color-secondary: rgb(248, 221, 69);
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px;
+    align-items:center;
+    min-height: 8vh ;
+    background-color: $color-secondary;
+
+  .nav-links{
+    display:flex;
+    justify-content: space-around;
+    width:30%;
+    align-items: center;
+    color:$color-primary;
+    list-style: none;
+
+
+    li a{
+
+    align-items: center;
+    text-decoration: none;
+    color:$color-primary;
+    justify-content: center;
+    display: flex;
+    margin-top: 13px;
+
+      }
+   }
+} 
+.nav-heading{
+    color:$color-primary;
+    text-transform: uppercase;
+    letter-spacing:1px;
+    font-size:20px;
+    text-decoration: none;
+}
+
+body{
+    width:100vw;
+    height:100vh;
+    background-repeat: no-repeat;
+    margin: auto;
+    font-family: $font-body;
+    background-size: contain;
+    background-image: url("https://images.unsplash.com/photo-1512295767273-ac109ac3acfa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDJ8fHdlYiUyMGRldmVsb3BtZW50fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60");
+}
+.name{
+    margin-top: 300px;
+    margin-left: 600px;
+    padding: 20px;
+    color:$color-primary;
+    font-family: $font-dispaly;
+
+    
+}
+.img{
+    border-radius: 999px;
+    margin-top: -250px; 
+    width: 200px;
+    height: 200px;
+}
+@media screen and (max-width:600px){
+    .name{
+      margin: auto;
+         flex-wrap: wrap;
+        display: flex;
+        padding-top: 325px;
+        letter-spacing:1px;
+        padding-left: 5px;
+    }
+    .img{
+        margin: auto;
+    }
+    ul li a{
+display: flex;
+margin: auto;
+justify-content: space-around;
+    }
+    ul .nav-links{
+        justify-content: space-around;
+    }
+    .nav{
+        justify-content: space-around;
+    }
+}
+@media screen and (max-width:900px){
+    
+    .img{
+margin: auto;
+    }
+    .name{
+padding-top: 300px;
+        margin: auto;
+         flex-wrap: wrap;
+        display: flex;
+        
+    }
+
+}
